@@ -27,6 +27,10 @@ body {
   height: 100vh;
 }
 
+canvas.resizing {
+  cursor: nwse-resize;
+}
+
 section {
   /* background: #fff;
 border-radius: 7px; */
@@ -291,6 +295,7 @@ input[type="range"]:focus::-moz-range-thumb:hover {
 
 .buttons {
   display: flex;
+  position: relative;
 }
 
 .buttons button {
@@ -317,6 +322,18 @@ input[type="range"]:focus::-moz-range-thumb:hover {
 .buttons .save-img {
   background-image: url(./assets/save.png);
 }
+
+#fileInput {
+  display: none;
+}
+
+.buttons img {
+  position: absolute;
+  left: -2.5vw;
+  width: 3.5vw;
+  cursor: pointer;
+}
+
 
 .drawing-board {
   flex: 1;
